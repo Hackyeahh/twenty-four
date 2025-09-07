@@ -1,5 +1,5 @@
 from loguru import logger
-from main import solve_24, State, Counter
+from engine import solve_24, State, Counter
 
 values = [int(input(f"provide number {i + 1}: ")) for i in range(4)]
 
