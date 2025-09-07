@@ -4,6 +4,17 @@ My friend Caleb is really good at [this](https://en.wikipedia.org/wiki/24_(puzzl
 
 No more.
 
+## What is the 24 Game?
+
+The 24 puzzle is a mathematical game where you must manipulate four given integers to create the number 24, using only basic arithmetic operations (+, -, ×, ÷) and parentheses. Each number must be used exactly once.
+
+**Example:** With `4, 7, 8, 8`:
+- ✅ `(7 - (8 ÷ 8)) × 4 = 24`  
+- ❌ `4 × 7 - 8 = 20` (doesn't equal 24)
+
+Some combinations like `3, 3, 8, 8` have no solution - this solver will tell you definitively.
+
+
 ## Installation
 
 ```bash
@@ -50,14 +61,3 @@ s24 2 2 3 6
 > SUCCESS  | solution: [2÷2=1.0] [3+1.0=4.0] [6×4.0=24.0] 
 > INFO     | (6 more solutions available with --all)
 ```
-
-## What is the 24 Game?
-
-Given four numbers, use basic arithmetic operations (+, -, ×, ÷) to make exactly 24. Each number must be used exactly once.
-
-**Example:** With `2, 2, 3, 6`:
-- ✅ `(2+2) × 6 = 24`  
-- ✅ `6 ÷ (3-2) × (2+2) = 24`
-- ❌ `2 × 3 × 4 = 24` (uses 4, not available)
-
-Some combinations like `3, 3, 8, 8` have no solution - this solver will tell you definitively.
