@@ -49,7 +49,7 @@ def solve_24(cards: list[int]) -> list[Path]:
     logger.info(
         f"took {1000 * (time.time() - start_time):.2f}ms to search {explored_nodes} nodes."
     )
-    logger.debug(
+    logger.info(
         f"{cache_hits / explored_nodes * 100:.1f}% = ({cache_hits}/{explored_nodes}) were cache hits!"
     )
     return paths
