@@ -67,10 +67,10 @@ def _get_next_states(orig_cards: State, x, y) -> list[State]:
         (x + y, f"{x}+{y}"),
         (x - y, f"{x}-{y}"),
         (y - x, f"{y}-{x}"),
-        (x * y, f"{x}*{y}"),
+        (x * y, f"{x}×{y}"),
     ]
-    operations += [(x / y, f"{x}/{y}")] if y != 0 else []
-    operations += [(y / x, f"{y}/{x}")] if x != 0 else []
+    operations += [(x / y, f"{x}÷{y}")] if y != 0 else []
+    operations += [(y / x, f"{y}÷{x}")] if x != 0 else []
 
     next_states: list[State] = []
     for new_v, op_strp in operations:
